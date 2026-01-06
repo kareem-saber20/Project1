@@ -4,31 +4,36 @@ public class Students extends PersonalInformation {
     
 
         private String createBy;
-        private ArrayList<String> courses; 
-        private double grade;
+        private ArrayList<Courses> studentCourses; 
+        private Courses studentGrade;
 
         //functions
 
-        Students() {
 
-            courses = new ArrayList<>();
-        }
-        
-        public void setCourses(String course){
 
-            courses.add(course);
+        public void setCourses(Courses name){
+
+            studentCourses.add(name);
         }
 
         public void getCourses(){
             
-             for( String x :courses){
-
-                System.out.print( x + " ");
+            for(Courses x : studentCourses){
+                System.out.println(x);
             }
         }
 
-        public double getGrade(){
+        public void deleteCourse(){
 
-            return grade;
         }
-    }
+        
+        public void getStudentGrade(Courses name){
+            
+             System.out.println();;
+        }
+        
+
+
+
+      
+}
