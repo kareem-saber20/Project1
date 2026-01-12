@@ -36,7 +36,7 @@ public class Task2 {
 
             int maxNumber = array[0];
 
-            for(int i = 0; i <= array.length -1 ; i++){
+            for(int i = 1; i <= array.length -1 ; i++){
 
                 if(maxNumber < array[i]){
             
@@ -53,7 +53,7 @@ public class Task2 {
 
             int minNumber = array[0];
 
-            for(int i = 0; i <= array.length -1 ; i++){
+            for(int i = 1; i <= array.length -1 ; i++){
 
                 if(minNumber > array[i]){
             
