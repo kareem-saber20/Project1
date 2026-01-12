@@ -12,17 +12,16 @@ public class Task1 {
 
         System.out.print("Enter Numbers without spaces: ");
         String x = input.next();
-
+        
         for (int i= 0 ; i <= x.length()-1 ; i++) {
 
             // 48 >> uni code of number 0
-            
+
             sum =  sum +  x.charAt(i) - 48;
-            System.out.print(x.charAt(i) + " ");
             
         } 
         
-        System.out.println( "\n"+ "Output: "  + sum); 
+        System.out.println( "The sum of numbers: "  + sum); 
 
 
     }
