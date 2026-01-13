@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task2 {
 
+    // find mix & min in an array & sort numbers in array which is even or odd  and find the count of each them
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

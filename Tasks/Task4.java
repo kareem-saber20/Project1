@@ -3,10 +3,9 @@ package Tasks;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Task3 {
+public class Task4 {
 
-    //  use arraylist to enter numbers without duplication
-
+    //  use arraylist to enter numbers without duplication and sort it
     public static void main(String[] args) {
 
         
@@ -35,7 +34,9 @@ public class Task3 {
             }
         }
 
-        System.out.print("Array list: ");
+        arrayList.sort(null);
+
+        System.out.print("Array list sorted : ");
 
         for(int x : arrayList){
 
@@ -43,5 +44,5 @@ public class Task3 {
         }
 
     }
-
+    
 }

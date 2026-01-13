@@ -3,6 +3,8 @@ package Tasks;
 import java.util.Scanner;
 
 public class Task1 {
+
+    // enter  number then seperate its digits >> Example >> 12345678
     
     public static void main(String[] args) {
 
