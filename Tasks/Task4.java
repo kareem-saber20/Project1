@@ -8,7 +8,8 @@ public class Task4 {
     //  use arraylist to enter numbers without duplication and sort it
     public static void main(String[] args) {
 
-        
+        //Input 
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("Number of items: ");
@@ -17,7 +18,10 @@ public class Task4 {
 
         ArrayList<Integer> arrayList = new ArrayList<>(n);
 
-        System.out.print("Enter " + n + " numbers: "  );
+        System.out.print("Enter " + n + " numbers: "  );    
+
+        
+        //Processing
 
         // enter new numbers and prevent duplication
 
@@ -33,8 +37,10 @@ public class Task4 {
 
             }
         }
-
+        
         arrayList.sort(null);
+
+        //Output
 
         System.out.print("Array list sorted : ");
 

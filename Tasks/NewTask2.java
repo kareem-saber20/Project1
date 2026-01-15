@@ -9,12 +9,16 @@ public class NewTask2 {
 
     public static void main(String[] args) {
 
+        //Input
+
         int counterEven = 0;
         int sumEven = 0;
 
         int counterOdd = 0;
         int sumOdd = 0;
 
+        
+        //Processing
         
         Scanner input = new Scanner(System.in);
 
@@ -26,10 +30,10 @@ public class NewTask2 {
 
         System.out.print("Enter " + n +  " numbers: "  );
         
-        int value;
-
         // user enter the numbers
-
+        
+        int value;
+        
         for(int i = 0; i < n ; i++){
 
             value = input.nextInt();
@@ -51,6 +55,9 @@ public class NewTask2 {
         }
 
         arrayList.sort(null);
+
+
+        // Output
 
         System.out.print("\n" + "Array list sorted: ");
 

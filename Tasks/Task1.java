@@ -16,6 +16,7 @@ public class Task1 {
 
         int a = input.nextInt();
 
+        //Processing
 
         // Example 1
 
@@ -125,6 +126,9 @@ public class Task1 {
 
             sum = lastDigit + digit1 + digit2 + digit3 + digit4 + digit5 + digit6;
         }
+
+
+       //Output
 
         System.out.println("The sum: " + sum);
     }

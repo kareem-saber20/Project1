@@ -7,6 +7,9 @@ public class Task2 {
     // find mix & min in an array & sort numbers in array which is even or odd  and find the count of each them
     public static void main(String[] args) {
 
+
+        //Input 
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the number of items: ");
@@ -14,6 +17,8 @@ public class Task2 {
       
         int[] numbers = new int[n];
 
+        //Processing
+        
         // enter and store the input numbers in array
 
         System.out.print("\n"+"Enter " + n + " numbers: ");

@@ -9,6 +9,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
+        //Input
         
         Scanner input = new Scanner(System.in);
 
@@ -20,6 +21,8 @@ public class Task3 {
 
         System.out.print("Enter " + n + " numbers: "  );
 
+        //Processing
+        
         // enter new numbers and prevent duplication
 
         int value;
@@ -33,7 +36,9 @@ public class Task3 {
             arrayList.add(value);
 
             }
-        }
+        }       
+
+        //Output
 
         System.out.print("Array list: ");
 
