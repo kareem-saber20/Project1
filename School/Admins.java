@@ -1,8 +1,12 @@
 package School;
 
+import java.util.ArrayList;
+
 public class Admins extends PersonalInformation {
 
     private String password;
+
+    Courses course;
 
 
     //Constructors
@@ -15,16 +19,16 @@ public class Admins extends PersonalInformation {
 
     //....................................................
 
-    public void setNewStudents(String name, String gender, String id, String phone, String email) {
+    public void setNewStudent(String name, String gender, String id, String phone, String email) {
 
         Students student = new Students(name, gender, id, phone, email);
     }
 
-    public String[] getStudentsData(Students student) {
+    public String[] getStudentPersonalData(Students student) {
 
-        String[] studentData = {student.name, student.gender, student.id, student.getPhone(), student.getEmail()};
+        String[] studentPersonalData = {student.name, student.gender, student.id, student.getPhone(), student.getEmail()};
 
-        return studentData;
+        return studentPersonalData;
     }
 
     public void deleteStudents() {
@@ -33,34 +37,39 @@ public class Admins extends PersonalInformation {
 
     //....................................................
 
-    public void setNewInstructors(String name, String gender, String id, String phone, String email) {
+    public void setNewInstructor(String name, String gender, String id, String phone, String email) {
 
         Instructors instructor = new Instructors(name, gender, id, phone, email);
     }
 
-    public String[] getInstructorsData(Instructors instructor) {
+    public String[] getInstructorPersonalData(Instructors instructor) {
 
-        String[] instructorData = {instructor.name, instructor.gender, instructor.id, instructor.getPhone(), instructor.getEmail()};
+        String[] instructorPersonalData = {instructor.name, instructor.gender, instructor.id, instructor.getPhone(), instructor.getEmail()};
 
-        return instructorData ;
+        return instructorPersonalData;
     }
 
-    public void deleteInstructors() {
+    public void deleteInstructor() {
 
     }
 
     //....................................................
 
 
-    public void setNewCourses(Courses course) {
-        course.setNewCourse(course);
+    public void setNewCourse(Courses course) {
+
+        this.course.setNewCourse(course);
     }
 
-    public void getCoursesData(Courses course) {
-            course.getListOfCoursesName();
+    public ArrayList<Courses> getCourseData(Courses course) {
+
+        return course.getListOfCourses();
     }
 
-    public void deleteCourses() {
+    public void deleteCourse(int number) {
+
+        course.getListOfCourses().remove(number);
+
 
     }
 

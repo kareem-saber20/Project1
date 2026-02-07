@@ -40,21 +40,8 @@ public class Courses {
         this.listOfCourses.addAll(listOfCourses);
 
     }
-   // .........................................
-
-
-    public  void setStudentDregeeInCourse(double studentDregeeInCourse){
-
-        this.studentDregeeInCourse = studentDregeeInCourse;
-    }
-
-    public double getStudentDregeeInCourse() {
-
-        return  studentDregeeInCourse;
-    }
 
     //.........................................
-
 
     @Override
     public String toString() {
@@ -63,7 +50,22 @@ public class Courses {
     }
 
 
+    // .........................................
+
+
+    public void setStudentDregeeInCourse(double studentDregeeInCourse) {
+
+        this.studentDregeeInCourse = studentDregeeInCourse;
+    }
+
+    public double getStudentDregeeInCourse() {
+
+        return studentDregeeInCourse;
+    }
+
     //.........................................
+
+
     public String getCourseName() {
         return courseName;
     }
@@ -82,21 +84,26 @@ public class Courses {
 
     }
 
-    public void getListOfCoursesName() {
+//    public void getListOfCoursesName() {
+//
+//        System.out.print("List Of Courses: ");
+//        for (Courses x : listOfCourses) {
+//
+//            System.out.print(x.getCourseName() + "  ");
+//        }
+//        System.out.println();
+//    }
 
-        System.out.print("List Of Courses: ");
-        for (Courses x : listOfCourses) {
+    public ArrayList<Courses> getListOfCourses() {
 
-            System.out.print(x.getCourseName() + "  ");
-        }
-        System.out.println();
+        return listOfCourses;
     }
 
     //.........................................
 
     // Credit Hours for each course
 
-    public void setCreditHours( int hours) {
+    public void setCreditHours(int hours) {
 
         this.creditHours = hours;
     }
@@ -110,7 +117,7 @@ public class Courses {
 
     // Details about each course
 
-    public void setDetailsAboutCourse( String details) {
+    public void setDetailsAboutCourse(String details) {
 
         this.detailsAboutCourse = details;
     }
@@ -168,7 +175,7 @@ public class Courses {
 
     // Exam degree
 
-    public void setExamGrade( double degree) {
+    public void setExamGrade(double degree) {
 
         this.degreeOfExam = degree;
     }
@@ -183,7 +190,7 @@ public class Courses {
 
     // Start enrollment date
 
-    public void setStartEnrollment( String date) {
+    public void setStartEnrollment(String date) {
 
         this.startEnrollment = date;
 
@@ -199,7 +206,7 @@ public class Courses {
 
     // deadline
 
-    public void setDeadline( String date) {
+    public void setDeadline(String date) {
 
         this.deadline = date;
 

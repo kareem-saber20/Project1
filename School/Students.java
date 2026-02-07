@@ -14,10 +14,9 @@ public class Students extends PersonalInformation {
 
     //Constructor
 
-    Students(String name, String gender, int id, String phone, String email) {
+    Students(String name, String gender, String id, String phone, String email) {
         super(name, gender, id, phone, email);
         studentCourses = new ArrayList<>();
-
     }
 
     //....................................................
@@ -28,15 +27,9 @@ public class Students extends PersonalInformation {
     }
 
 
-    public void getStudentCourses() {
+    public ArrayList<Courses> getStudentCourses() {
 
-        System.out.print("List Of Students Courses: ");
-
-        for (Courses x : studentCourses) {
-            System.out.print(x.getCourseName() + " ");
-        }
-
-        System.out.println();
+      return studentCourses;
     }
 
     public Courses getSpecificStudentCourse(int number){

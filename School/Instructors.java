@@ -9,7 +9,7 @@ public class Instructors extends  PersonalInformation{
 
     //functions
 
-        Instructors(String name, String gender, int id, String phone, String email) {
+        Instructors(String name, String gender, String id, String phone, String email) {
             super(name, gender, id, phone, email);
 
             instructorCourses = new ArrayList<>();
@@ -24,15 +24,9 @@ public class Instructors extends  PersonalInformation{
     }
 
 
-    public void getInstructorCourses() {
+    public ArrayList<Courses> getInstructorCourses() {
 
-        System.out.print("List Of Instructor Courses: ");
-
-        for (Courses x : instructorCourses) {
-            System.out.print(x.getCourseName() + " ");
-        }
-
-        System.out.println();
+      return instructorCourses;
     }
 
     //....................................................

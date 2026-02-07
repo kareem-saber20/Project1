@@ -6,18 +6,18 @@ public  class PersonalInformation {
 
     protected String name;
     protected String gender;
-    protected int id;
+    protected String id;
     protected String phone;
     protected String email;
     protected Date date;
 
-    PersonalInformation(String name , String gender , int id){
+    PersonalInformation(String name , String gender , String id){
 
         this.name = name;
         this.id = id;
         this.gender = gender;
     }
-    PersonalInformation(String name , String gender , int id , String phone , String email){
+    PersonalInformation(String name , String gender , String id , String phone , String email){
 
         this.name = name;
         this.id = id;
@@ -45,11 +45,11 @@ public  class PersonalInformation {
         this.gender = gender;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
